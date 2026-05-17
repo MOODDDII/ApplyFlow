@@ -1,16 +1,74 @@
-# React + Vite
+# ApplyFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ApplyFlow** — інструмент для відстеження заявок на роботу. Організовуй кандидатури на різних етапах найму за допомогою зручної Kanban-дошки з підтримкою drag-and-drop.
 
-Currently, two official plugins are available:
+## Стек технологій
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Frontend**
+- React 19
+- Vite 7
+- SCSS (Sass)
+- @dnd-kit — drag-and-drop взаємодія
 
-## React Compiler
+**Backend**
+- Node.js (папка `backend/`)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Структура проекту
 
-## Expanding the ESLint configuration
+```
+ApplyFlow/
+├── backend/          # Серверна частина
+├── public/           # Статичні файли
+├── src/              # Вихідний код React-застосунку
+├── index.html
+├── vite.config.js
+└── package.json
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Встановлення та запуск
+
+### 1. Клонування репозиторію
+
+```bash
+git clone https://github.com/MOODDDII/ApplyFlow.git
+cd ApplyFlow
+```
+
+### 2. Встановлення залежностей
+
+```bash
+npm install
+```
+
+### 3. Запуск у режимі розробки
+
+```bash
+npm run dev
+```
+
+Застосунок буде доступний за адресою `http://localhost:5173`
+
+### 4. Збірка для продакшну
+
+```bash
+npm run build
+```
+
+### 5. Попередній перегляд збірки
+
+```bash
+npm run preview
+```
+
+## Доступні скрипти
+
+| Скрипт | Дія |
+|--------|-----|
+| `npm run dev` | Запуск dev-сервера з HMR |
+| `npm run build` | Збірка для продакшну |
+| `npm run preview` | Локальний перегляд збірки |
+| `npm run lint` | Перевірка коду через ESLint |
+
+## Ліцензія
+
+MIT
