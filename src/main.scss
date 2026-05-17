@@ -1,0 +1,52 @@
+@use './styles/utils';
+@use './styles/header';
+@use './styles/modal';
+@use './styles/kanban';
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 800;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding-inline: 20px;
+  background-color: $main-bg;
+}
+
+.btn {
+  border-radius: 12px;
+  corner-shape: squircle;
+  color: #fff;  
+  padding: 8px 15px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 800;
+  transition: $t-300;
+  opacity: .9;
+  cursor: pointer;
+
+  &_primary {
+    background-color: $accent;
+
+    &:hover {
+      background-color: $hover;
+      opacity: 1;
+    }
+  }
+
+  &_secondary {
+    background-color: $secondary;
+
+    &:hover {
+      background-color: $secondary-hover;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use './utils' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  margin-bottom: 170px;
+
+  &_logo {
+    font-weight: 800;
+  }
+
+  @include min {
+    flex-direction: column;
+  }
+}

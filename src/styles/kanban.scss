@@ -1,0 +1,87 @@
+@use "@/styles/variables" as *;
+
+.kanban {
+  &_title {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 80px;
+  }
+
+  &_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  &_btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  &_card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 14px;
+    corner-shape: squircle;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border: 2px solid $accent;
+    background-color: $border;
+
+    p {
+      margin: 0;
+      text-align: center;
+    }
+
+    &_title {
+      text-align: center;
+      margin: 0;
+      font-weight: 700;
+      color: $accent;
+    }
+
+    &_info {
+      text-align: center;
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+
+  &_column {
+    background-color: $card-bg;
+    border-radius: 20px;
+    corner-shape: squircle;
+    padding: 20px;
+    width: 200px;
+    height: fit-content;
+
+    &_title {
+      color: $main-text;
+      font-weight: 800;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+
+    &_children {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: $card-bg;
+      width: 100%;
+      min-height: 120px;
+      border-radius: 20px;
+      corner-shape: squircle;
+    }
+
+    &_sleep {
+      font-size: 30px;
+      color: $main-text;
+      text-align: center;
+    }
+  }
+}

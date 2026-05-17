@@ -1,0 +1,20 @@
+@use '@/styles/variables' as *;
+
+@mixin min {
+  @media (max-width: $s-width) {
+    @content;
+  }
+}
+
+@mixin max {
+  @media (max-width: $m-width) {
+    @content;
+  }
+}
+
+.container {
+  @include max;
+
+  max-width: $m-width;
+  margin: 0 auto;
+}
